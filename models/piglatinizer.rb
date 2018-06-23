@@ -9,7 +9,7 @@ class PigLatinizer
     new_words = []
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     words.each do |word|
-      if vowels.include?(word[0])
+      if vowels.include?(word[0].downcase)
         new_word = word + "way"
         new_words << new_word
       else
