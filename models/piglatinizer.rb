@@ -7,7 +7,7 @@ class PigLatinizer
   def piglatinize(phrase)
     words = phrase.split(" ")
     new_words = []
-    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    vowels = ["a", "e", "i", "o", "u"]
     words.each do |word|
       if vowels.include?(word[0].downcase)
         new_word = word + "way"
